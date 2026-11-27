@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Merged into the app. An app with its own FirebaseMessagingService removes this one with tools:node="remove"
+             and calls DrSocialMessaging.onNewToken / onMessage from its own. -->
+        <service
+            android:name="com.drsocial.sdk.fcm.DrSocialMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,39 @@
+// The React Native bridge over the native Android SDK. Built inside the app: the app's Gradle gives the Android and
+// Kotlin plugins and React Native's own version (react-android without a version is resolved by the React Native
+// Gradle plugin). The SDK itself comes from packages/drsocial_android through the app's settings (see README).
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+def safe(String name, def fallback) {
+    rootProject.ext.has(name) ? rootProject.ext.get(name) : fallback
+}
+
+android {
+    namespace 'com.drsocial.reactnative'
+    compileSdk safe('compileSdkVersion', 35)
+
+    defaultConfig {
+        minSdk Math.max(26, safe('minSdkVersion', 26) as int)
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/java'
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
+}
+
+dependencies {
+    implementation 'com.facebook.react:react-android'
+    // play brings android and core (the whole SDK) with Play's install referrer, review box and Play Integrity.
+    implementation 'com.drsocial:drsocial-sdk-play:0.1.0'
+}

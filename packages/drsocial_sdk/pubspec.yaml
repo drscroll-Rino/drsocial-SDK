@@ -1,0 +1,15 @@
+name: drsocial_sdk
+description: The DrSocial mobile SDK core for Dart and Flutter apps (pure Dart). Reads the build's signed config, remote settings and flags, the icon to show and the update rule; registers the device and keeps a short token. The contract is the platform's resources/mobile-sdk/API.md (v1).
+version: 0.2.0
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  crypto: ^3.0.3
+  cryptography: ^2.7.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.0

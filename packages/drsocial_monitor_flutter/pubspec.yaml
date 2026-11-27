@@ -1,0 +1,20 @@
+name: drsocial_monitor_flutter
+description: Flutter glue for drsocial_monitor — error hooks, the navigator observer, the app's lifecycle and a file for the queue.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  drsocial_monitor:
+    path: ../drsocial_monitor
+  path_provider: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0

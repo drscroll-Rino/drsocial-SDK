@@ -1,0 +1,11 @@
+name: drsocial_monitor
+description: DrSocial app performance monitoring for Flutter apps (core, pure Dart). Batches the app's own events to the build's DrSocial endpoint.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.0

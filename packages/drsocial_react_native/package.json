@@ -1,0 +1,26 @@
+{
+  "name": "@drsocial/react-native",
+  "version": "0.1.0",
+  "description": "React Native bridge for the DrSocial mobile SDK (over the native Android and iOS SDKs).",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": ["src", "lib", "android", "ios", "DrSocialReactNative.podspec", "react-native.config.js", "!**/__tests__"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.74"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "react-native": "0.88.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
