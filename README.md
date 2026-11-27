@@ -20,3 +20,7 @@ a secret. No server key, store key or Firebase key ever goes in the app. The con
 (API v1; a change that would break a store build becomes v2).
 
 The same packages can be downloaded as zips from DrSocial → Settings → 📱 Mobile app.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

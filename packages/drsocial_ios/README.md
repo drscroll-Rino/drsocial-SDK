@@ -242,3 +242,7 @@ They also cover:
 
 The App Attest, DeviceCheck, Secure Enclave, APNs and ActivityKit calls themselves need a real device and a signed app, so
 the unit tests cannot cover them.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

@@ -111,3 +111,7 @@ iOS Live Activities do not exist on Android.
 ```
 
 `local.properties` names the Android SDK (`sdk.dir=…`). The Android tests run on Robolectric (SDK 33).
+
+## License
+
+MIT. See [LICENSE](LICENSE).

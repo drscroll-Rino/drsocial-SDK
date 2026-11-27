@@ -127,3 +127,7 @@ npm install && npm run type-check && npm test        # the JavaScript part (vite
 
 The Android bridge was compiled against `react-android` 0.88.1 and the SDK. The iOS bridge needs Xcode and a React Native
 app to build: open the app's workspace after `pod install`.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

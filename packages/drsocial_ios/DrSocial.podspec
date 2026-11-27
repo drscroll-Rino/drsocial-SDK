@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = '0.1.0'
   s.summary      = 'The DrSocial mobile SDK for iOS (API v1).'
   s.homepage     = 'https://social.drscroll.com'
-  s.license      = { :type => 'Proprietary' }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = 'DR. Scroll'
   s.source       = { :git => 'https://github.com/drscroll-Rino/drsocial-SDK.git', :tag => "ios-#{s.version}" }
   s.platform     = :ios, '14.0'

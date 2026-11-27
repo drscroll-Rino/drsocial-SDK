@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.version      = package['version']
   s.summary      = package['description']
   s.homepage     = 'https://social.drscroll.com'
-  s.license      = { :type => 'Proprietary' }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = 'DR. Scroll'
   s.source       = { :git => 'https://github.com/drscroll-Rino/drsocial-SDK.git', :tag => "rn-#{s.version}" }
   s.platform     = :ios, '14.0'
